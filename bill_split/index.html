@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bill split</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1>Bill splitter</h1>
+            <p>Split Your Bill</p>
+        </div>
+        <div class="bottom">
+            <label for="price">Bill</label>
+            <input id="price" type="number">
+            <label for="people">People count</label>
+            <input id="people" type="number">
+            <label for="tip">tip</label>
+            <select id="tip">
+                <option value="0" disabled selected>-- choose tip level --</option>
+                <option value="0.05">5%</option>
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.2">20%</option>
+            </select>
+            <button class="count">Count</button>
+            <p class="error"></p>
+            <p class="cost-info">Everyone should pay <span class="cost"></span> zł!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
